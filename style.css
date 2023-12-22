@@ -1,0 +1,53 @@
+:root {
+    --White: rgb(255, 255, 255);
+    --Lightgray: rgb(214, 226, 240);
+    --Grayishblue: rgb(123, 135, 157);
+    --Darkblue: rgb(31, 50, 81);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Lightgray);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+}
+
+.box {
+    background-color: var(--White);
+    padding: 10px 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    width:260px;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(31, 50, 81, 0.17);
+    box-shadow: 4px 8px 19px -3px rgb(31, 50, 81, 0.17);
+
+}
+
+/* Optional: Add margin between elements */
+h1{
+    font-size:20px;
+    color:var(--Darkblue);
+    margin-top:15px;
+}
+p{
+    font-size:15px;
+    color:var(--Grayishblue);
+    margin-top:-2px;
+    margin-bottom:20px;
+}
+h1,p{
+    text-align: center;
+}
